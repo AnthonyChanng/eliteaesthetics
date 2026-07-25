@@ -15,25 +15,23 @@ const packages = [
 ];
 
 const hours = [
-  ["Monday – Friday", "9am – 6pm"],
-  ["Saturday", "9am – 4pm"],
-  ["Sunday", "By appointment"],
+  ["Monday – Friday", "9am – 3pm"],
 ];
 
 export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Main navigation">
-        <a className="brand" href="#top" aria-label="Maré Spa home">
-          <span className="brandMark">M</span>
-          <span>MARÉ <small>COASTAL SPA</small></span>
+        <a className="brand" href="#top" aria-label="Elite Aesthetics home">
+          <span className="brandMark">EA</span>
+          <span>ELITE AESTHETICS <small>MEDSPA</small></span>
         </a>
         <div className="navLinks">
           <a href="#services">Services</a>
           <a href="#packages">Packages</a>
           <a href="#visit">Visit</a>
         </div>
-        <a className="navCta" href="tel:+17725550184">Book a treatment <span>↗</span></a>
+        <a className="navCta" href="tel:+17722028668">Book a treatment <span>↗</span></a>
       </nav>
 
       <section className="hero" id="top">
@@ -45,10 +43,10 @@ export default function Home() {
           <p className="heroCopy">Thoughtful treatments, coastal calm, and a little time that is entirely yours.</p>
           <div className="heroActions">
             <a className="button primary" href="#services">Explore treatments <span>→</span></a>
-            <a className="textLink lightLink" href="tel:+17725550184">Call (772) 555-0184</a>
+            <a className="textLink lightLink" href="tel:+17722028668">Call (772) 202-8668</a>
           </div>
         </div>
-        <div className="heroNote"><span>Open today</span><strong>9:00 AM – 6:00 PM</strong></div>
+        <div className="heroNote"><span>Open Mon - Fri</span><strong>9:00 AM – 3:00 PM</strong></div>
       </section>
 
       <section className="intro sectionPad">
@@ -56,7 +54,7 @@ export default function Home() {
         <div className="introGrid">
           <h2>Wellness should feel<br /><em>beautifully simple.</em></h2>
           <div>
-            <p>Nestled along Florida’s Treasure Coast, Maré is a modern sanctuary inspired by the restorative rhythm of the ocean. Every detail is considered, every treatment is personal.</p>
+            <p>Nestled along Florida’s Treasure Coast, Elite Aesthetics is a modern sanctuary inspired by the restorative rhythm of the ocean. Every detail is considered, every treatment is personal.</p>
             <a className="textLink" href="#visit">Discover our space <span>→</span></a>
           </div>
         </div>
@@ -74,7 +72,7 @@ export default function Home() {
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <div className="servicePrice"><strong>{service.price}</strong><span>{service.duration}</span></div>
-              <a href="tel:+17725550184" aria-label={`Book ${service.title}`}>↗</a>
+              <a href="tel:+17722028668" aria-label={`Book ${service.title}`}>↗</a>
             </article>
           ))}
         </div>
@@ -91,7 +89,7 @@ export default function Home() {
             <article className={item.featured ? "package featured" : "package"} key={item.name}>
               {item.featured && <span className="favorite">Guest favorite</span>}
               <span>{item.note}</span><h3>{item.name}</h3><p>{item.details}</p>
-              <div><strong>{item.price}</strong><a href="tel:+17725550184">Reserve <span>→</span></a></div>
+              <div><strong>{item.price}</strong><a href="tel:+17722028668">Reserve <span>→</span></a></div>
             </article>
           ))}
         </div>
@@ -111,14 +109,14 @@ export default function Home() {
             <div><span>LOCATION</span><p>3101 Ocean Drive<br />Vero Beach, FL 32963</p><a href="https://maps.google.com/?q=3101+Ocean+Drive+Vero+Beach+FL" target="_blank" rel="noreferrer">Get directions ↗</a></div>
             <div><span>HOURS</span>{hours.map(([day, time]) => <p className="hours" key={day}><b>{day}</b>{time}</p>)}</div>
           </div>
-          <div className="contact"><a href="tel:+17725550184">(772) 555-0184</a><a href="mailto:hello@marespa.com">hello@marespa.com</a></div>
+          <div className="contact"><a href="tel:+17722028668">(772) 202-8668</a><a href="mailto:eliteaestheticsfl@gmail.com">hello@eliteaestheticsfl@gmail.com</a></div>
         </div>
         <div className="visitVisual"><div className="sun" /><p>ATLANTIC<br />OCEAN</p><span>27.65° N<br />80.36° W</span></div>
       </section>
 
       <footer>
-        <div className="brand footerBrand"><span className="brandMark">M</span><span>MARÉ <small>COASTAL SPA</small></span></div>
-        <p>© {new Date().getFullYear()} Maré Coastal Spa. All rights reserved.</p>
+        <div className="brand footerBrand"><span className="brandMark">EA</span><span>ELITE AESTHETICS <small>COASTAL SPA</small></span></div>
+        <p>© {new Date().getFullYear()} Elite Aesthetics Coastal Spa. All rights reserved.</p>
         <div><a href="#services">Services</a><a href="#visit">Contact</a><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
