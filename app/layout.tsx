@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Maré Coastal Spa | Vero Beach, Florida",
+  title: "Elite Aesthetics Spa | Vero Beach, Florida",
   description: "Thoughtful spa treatments and coastal calm in Vero Beach, Florida.",
 };
 
