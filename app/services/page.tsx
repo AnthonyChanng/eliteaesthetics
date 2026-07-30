@@ -19,8 +19,8 @@ export default function ServicesPage() {
     <main>
       <nav className="nav" aria-label="Main navigation">
         <Link className="brand" href="/" aria-label="Elite Aesthetics home"><span className="brandMark">EA</span><span>ELITE AESTHETICS <small>MEDSPA</small></span></Link>
-        <div className="navLinks"><Link className="active" href="/services">Services</Link><Link href="/packages">Packages</Link><Link href="/#visit">Visit</Link></div>
-        <a className="navCta" href="tel:+17722028668">Book a treatment <span>↗</span></a>
+        <div className="navLinks"><Link className="active" href="/services">Services</Link><Link href="/packages">Packages</Link><Link href="/contact">Contact</Link></div>
+        <Link className="navCta" href="/contact">Book a treatment <span>↗</span></Link>
       </nav>
 
       <header className="pageHero sectionPad">
@@ -39,7 +39,6 @@ export default function ServicesPage() {
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <div className="servicePrice"><strong>{service.price}</strong><span>{service.duration}</span></div>
-              <a href="tel:+17722028668" aria-label={`Book ${service.title}`}>↗</a>
             </article>
           ))}
         </div>
@@ -48,7 +47,7 @@ export default function ServicesPage() {
       <footer>
         <Link className="brand footerBrand" href="/"><span className="brandMark">EA</span><span>ELITE AESTHETICS <small>MEDSPA</small></span></Link>
         <p>© {new Date().getFullYear()} Elite Aesthetics MedSpa. All rights reserved.</p>
-        <div><Link href="/packages">Packages</Link><Link href="/#visit">Contact</Link><a href="#">Back to top ↑</a></div>
+        <div><Link href="/packages">Packages</Link><Link href="/contact">Contact</Link><a href="#">Back to top ↑</a></div>
       </footer>
     </main>
   );

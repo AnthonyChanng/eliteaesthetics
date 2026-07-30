@@ -18,8 +18,8 @@ export default function PackagesPage() {
     <main className="packagesPage">
       <nav className="nav" aria-label="Main navigation">
         <Link className="brand" href="/" aria-label="Elite Aesthetics home"><span className="brandMark">EA</span><span>ELITE AESTHETICS <small>MEDSPA</small></span></Link>
-        <div className="navLinks"><Link href="/services">Services</Link><Link className="active" href="/packages">Packages</Link><Link href="/#visit">Visit</Link></div>
-        <a className="navCta" href="tel:+17722028668">Book a treatment <span>↗</span></a>
+        <div className="navLinks"><Link href="/services">Services</Link><Link className="active" href="/packages">Packages</Link><Link href="/contact">Contact</Link></div>
+        <Link className="navCta" href="/contact">Book a treatment <span>↗</span></Link>
       </nav>
 
       <section className="packages packagePageContent sectionPad">
@@ -33,7 +33,7 @@ export default function PackagesPage() {
             <article className={item.featured ? "package featured" : "package"} key={item.name}>
               {item.featured && <span className="favorite">Guest favorite</span>}
               <span>{item.note}</span><h3>{item.name}</h3><p>{item.details}</p>
-              <div><strong>{item.price}</strong><a href="tel:+17722028668">Reserve <span>→</span></a></div>
+              <div><strong>{item.price}</strong></div>
             </article>
           ))}
         </div>
@@ -42,7 +42,7 @@ export default function PackagesPage() {
       <footer>
         <Link className="brand footerBrand" href="/"><span className="brandMark">EA</span><span>ELITE AESTHETICS <small>MEDSPA</small></span></Link>
         <p>© {new Date().getFullYear()} Elite Aesthetics MedSpa. All rights reserved.</p>
-        <div><Link href="/services">Services</Link><Link href="/#visit">Contact</Link><a href="#">Back to top ↑</a></div>
+        <div><Link href="/services">Services</Link><Link href="/contact">Contact</Link><a href="#">Back to top ↑</a></div>
       </footer>
     </main>
   );
