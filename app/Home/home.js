@@ -16,10 +16,9 @@ export default function Home() {
         </Link>
         <div className="navLinks">
           <Link href="/services">Services</Link>
-          <Link href="/packages">Packages</Link>
-          <Link href="/contact">Contact</Link>
+          <a href="#visit">Contact</a>
         </div>
-        <Link className="navCta" href="/contact">Book a treatment <span>↗</span></Link>
+        <a className="navCta" href="#visit">Book a treatment <span>↗</span></a>
       </nav>
 
       <section className="hero" id="top">
@@ -63,7 +62,7 @@ export default function Home() {
       <footer>
         <div className="brand footerBrand"><span className="brandMark">EA</span><span>ELITE AESTHETICS <small> MEDSPA</small></span></div>
         <p>© {new Date().getFullYear()} Elite Aesthetics MedSpa. All rights reserved.</p>
-        <div><Link href="/services">Services</Link><Link href="/packages">Packages</Link><a href="#top">Back to top ↑</a></div>
+        <div><Link href="/services">Services</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

@@ -44,6 +44,27 @@ h2 { font-size:clamp(50px,6vw,88px); line-height:.95; }
 .services { background:var(--cream); }
 .sectionHeading { display:flex; justify-content:space-between; align-items:end; margin-bottom:65px; }
 .sectionHeading>p { max-width:370px; font-size:14px; line-height:1.7; }
+.serviceCategory { position:relative; }
+.categoryHeading { display:grid; grid-template-columns:.7fr 1.3fr; gap:7vw; align-items:end; margin-bottom:70px; }
+.categoryHeading .eyebrow { align-self:start; }
+.categoryHeading h2 { font-size:clamp(48px,5vw,76px); }
+.esthetics { background:var(--cream); }
+.estheticGrid { display:grid; grid-template-columns:repeat(3,1fr); column-gap:5vw; }
+.estheticService { display:grid; grid-template-columns:32px 1fr; gap:12px; padding:28px 0; border-top:1px solid rgba(23,63,59,.22); }
+.estheticService>div { min-width:0; }
+.serviceTitle { display:flex; justify-content:space-between; gap:18px; align-items:start; }
+.serviceTitle h3,.treatmentCard h3 { font:26px/1.15 'Italiana',serif; margin:0; font-weight:400; }
+.serviceTitle strong { flex:none; font-size:13px; font-weight:500; }
+.estheticService p,.treatmentCard p { font-size:12px; line-height:1.75; opacity:.72; margin:14px 0 0; }
+.serviceNote { margin:35px 0 0; font-size:10px; opacity:.6; }
+.injectables { background:var(--ink); color:white; }
+.injectables .treatmentCard { border-color:rgba(255,255,255,.22); }
+.injectables .treatmentCard p { color:rgba(255,255,255,.72); opacity:1; }
+.treatmentCards { display:grid; grid-template-columns:repeat(3,1fr); gap:4vw; }
+.treatmentCard { padding:34px 0 10px; border-top:1px solid rgba(23,63,59,.25); }
+.treatmentCard h3 { font-size:32px; }
+.treatmentCard p { max-width:350px; }
+.wellness { background:var(--paper); }
 .serviceList { border-top:1px solid rgba(23,63,59,.25); }
 .service { min-height:150px; border-bottom:1px solid rgba(23,63,59,.25); display:grid; grid-template-columns:70px 1.1fr 1.5fr .7fr; gap:25px; align-items:center; }
 .serviceNumber { font:14px 'Italiana',serif; opacity:.55; }
@@ -67,9 +88,6 @@ h2 { font-size:clamp(50px,6vw,88px); line-height:.95; }
 .packagePageContent { min-height:calc(100vh - 232px); }
 .visit { min-height:650px; display:grid; grid-template-columns:1.15fr .85fr; background:#254f4b; color:white; }
 .visitDetails { padding:100px clamp(24px,7vw,110px); }
-.contactPage { min-height:calc(100vh - 232px); }
-.contactPage h1 { font-family:'Italiana',serif; font-weight:400; letter-spacing:-.03em; margin:0; font-size:clamp(54px,6vw,88px); line-height:.95; }
-.contactPage h1 em { font-weight:400; color:#d7a28f; }
 .detailsGrid { display:grid; grid-template-columns:1fr 1.25fr; gap:55px; margin-top:55px; }
 .detailsGrid span { font-size:9px; letter-spacing:.22em; color:#aac1bd; }
 .detailsGrid p { font-size:13px; line-height:1.7; }
@@ -92,6 +110,7 @@ footer>div:last-child { display:flex; gap:25px; }
   h1 { font-size:clamp(60px,20vw,88px); }.heroNote { padding:16px 24px; min-width:210px; }.heroActions { align-items:flex-start; flex-direction:column; gap:22px; }
   .sectionPad { padding:82px 24px; }.introGrid,.packages,.visit { grid-template-columns:1fr; }.introGrid { gap:45px; }.sectionHeading { display:block; }.sectionHeading>p { margin-top:25px; }
   .pageHero { min-height:380px; }.pageHero .sectionHeading>p { margin-top:25px; }
+  .categoryHeading { grid-template-columns:1fr; gap:15px; margin-bottom:50px; }.estheticGrid,.treatmentCards { grid-template-columns:1fr; }.estheticService { padding:24px 0; }.treatmentCard { padding:28px 0; }
   .service { grid-template-columns:35px 1fr; gap:12px; padding:25px 0; }.service h3 { font-size:27px; }.service>p { grid-column:2; margin:0; }.servicePrice { grid-column:2; }
   .packages { gap:50px; }.visitVisual { min-height:430px; }.detailsGrid { gap:28px; }.contact { flex-direction:column; gap:12px; }
   footer { flex-direction:column; gap:24px; text-align:center; }.footerBrand { transform-origin:center; }
