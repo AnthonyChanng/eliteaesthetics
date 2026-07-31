@@ -16,7 +16,6 @@ export default function Home() {
         </Link>
         <div className="navLinks">
           <Link href="/services">Services</Link>
-          <a href="#visit">Contact</a>
         </div>
         <a className="navCta" href="#visit">Book a treatment <span>↗</span></a>
       </nav>

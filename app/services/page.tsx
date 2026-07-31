@@ -36,7 +36,7 @@ export default function ServicesPage() {
     <main>
       <nav className="nav" aria-label="Main navigation">
         <Link className="brand" href="/" aria-label="Elite Aesthetics home"><span className="brandMark">EA</span><span>ELITE AESTHETICS <small>MEDSPA</small></span></Link>
-        <div className="navLinks"><Link className="active" href="/services">Services</Link><Link href="/packages">Packages</Link><Link href="/#visit">Contact</Link></div>
+        <div className="navLinks"><Link className="active" href="/services">Services</Link></div>
         <Link className="navCta" href="/#visit">Book a treatment <span>↗</span></Link>
       </nav>
 
