@@ -3,8 +3,14 @@ import Link from "next/link";
 import "../Home/home.css";
 
 export const metadata: Metadata = {
-  title: "Services | Elite Aesthetics MedSpa",
-  description: "Explore esthetic services, injectables, and wellness treatments at Elite Aesthetics MedSpa.",
+  title: "MedSpa Services in Vero Beach, FL",
+  description: "Explore facials, SkinPen microneedling, PRP, dermal fillers, neuromodulators, weight loss, hormone replacement, and IV hydration in Vero Beach.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "MedSpa Services in Vero Beach, FL",
+    description: "Explore personalized esthetic, injectable, and wellness treatments at Elite Aesthetics MedSpa.",
+    url: "/services",
+  },
 };
 
 const estheticServices = [

@@ -50,7 +50,7 @@ export default function Home() {
           <p className="eyebrow light">Come see us <span /></p>
           <h2>Your quiet place<br /><em>by the sea.</em></h2>
           <div className="detailsGrid">
-            <div><span>LOCATION</span><p>1575 Indian River Blvd<br />Suit C130<br />Vero Beach, FL 32963</p><a href="https://maps.google.com/?q=1575+Indian+River+Blvd+Suite+C130+Vero+Beach,+FL+32960" target="_blank" rel="noreferrer">Get directions ↗</a></div>
+            <div><span>LOCATION</span><p>1575 Indian River Blvd<br />Suite C130<br />Vero Beach, FL 32963</p><a href="https://maps.google.com/?q=1575+Indian+River+Blvd+Suite+C130+Vero+Beach,+FL+32963" target="_blank" rel="noreferrer">Get directions ↗</a></div>
             <div><span>HOURS</span>{hours.map(([day, time]) => <p className="hours" key={day}><b>{day}</b>{time}</p>)}</div>
           </div>
           <div className="contact"><span>(772) 202-8668</span><a href="mailto:eliteaestheticsfl@gmail.com">eliteaestheticsfl@gmail.com</a></div>
